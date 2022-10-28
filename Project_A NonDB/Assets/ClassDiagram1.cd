@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MonsterAi">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="MonsterAi.E_Ai_State" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\MonsterAi.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEZAEAEBQCBAAIAgEAAQFCAAAIgAAAAAEQAACQUAAEA=</HashCode>
+      <FileName>Assets\Scripts\MonsterAi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonsterManager">
+    <Position X="6.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>SCRAAAAAAKQAAgAIAAAAAABgAABAAABAgACQAAAABEA=</HashCode>
+      <FileName>Assets\Scripts\MonsterManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>
