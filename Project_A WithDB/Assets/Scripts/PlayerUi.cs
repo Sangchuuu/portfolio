@@ -36,6 +36,8 @@ public class PlayerUi : MonoBehaviour
     [SerializeField]
     Button m_btnStart;
     [SerializeField]
+    Button m_btnExit;
+    [SerializeField]
     Button m_btnAtk;
 
     [SerializeField]
@@ -254,13 +256,21 @@ public class PlayerUi : MonoBehaviour
                 }
             );
     }
-  
+    public void EndGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+
+    }
 
     void Start()
     {
         StartGame();
         PlayerAttack();
-
+        m_btnExit.onClick.AddListener(delegate { EndGame(); });
     }
 
     private void OnValidate()

@@ -155,6 +155,12 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   sceneClasses:
     Assets/Scenes/Field.unity:
     - Class: 1
@@ -328,8 +334,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5110}
     - Class: 114
       Script: {instanceID: 5222}
-    - Class: 114
-      Script: {instanceID: 23116}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -555,7 +559,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: dac7edb4d10081f5978e38d120aca29b
+      Hash: 3cb7978673034e1b161f0202e46cbf06
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerUi

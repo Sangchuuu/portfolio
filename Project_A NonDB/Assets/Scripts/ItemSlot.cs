@@ -64,7 +64,7 @@ public class ItemSlot : MonoBehaviour
         if (m_nItemCount <= 0)
         {
             IsEmpty = true;
-            Inventory.instance.objITems.Remove(this.gameObject);
+            Inventory.instance.objITems.Remove(this.gameObject);    
             m_objItemCount.SetActive(false);
             m_imgSlot.sprite = m_imgOriginal;
         }

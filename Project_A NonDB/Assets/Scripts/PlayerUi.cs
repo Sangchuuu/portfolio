@@ -36,6 +36,8 @@ public class PlayerUi : MonoBehaviour
     [SerializeField]
     Button m_btnStart;
     [SerializeField]
+    Button m_btnExit;
+    [SerializeField]
     Button m_btnAtk;
 
     [SerializeField]
@@ -97,8 +99,12 @@ public class PlayerUi : MonoBehaviour
     {
         m_btnAtk.onClick.AddListener(delegate
         {
+        Movement movement = m_objPlayer.GetComponent <Movement>() ;
             m_bIsAttackButtonClick = true;
-            m_objPlayer.GetComponent<Movement>().IsMoving = true;
+            if (movement.ObjEnemy != null)
+            {
+                movement.IsMoving = true;
+            }
         });
     }
 
@@ -256,13 +262,22 @@ public class PlayerUi : MonoBehaviour
                 }
             );
     }
-  
+    public void EndGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+
+    }
+
 
     void Start()
     {
         StartGame();
         PlayerAttack();
-        
+        m_btnExit.onClick.AddListener(delegate { EndGame(); });
 
     }
 

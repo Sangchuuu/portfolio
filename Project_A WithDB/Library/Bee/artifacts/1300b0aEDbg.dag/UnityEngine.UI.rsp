@@ -121,6 +121,10 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:PHOTON_UNITY_NETWORKING
+-define:PUN_2_0_OR_NEWER
+-define:PUN_2_OR_NEWER
+-define:PUN_2_19_OR_NEWER
 -define:PACKAGE_PHYSICS
 -define:PACKAGE_PHYSICS2D
 -define:PACKAGE_TILEMAP
@@ -339,11 +343,11 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
--r:"C:/Users/User/Desktop/ragnarok/My project/Library/PackageCache/com.unity.collab-proxy@1.17.1/Lib/Editor/PlasticSCM/log4netPlastic.dll"
--r:"C:/Users/User/Desktop/ragnarok/My project/Library/PackageCache/com.unity.collab-proxy@1.17.1/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
--r:"C:/Users/User/Desktop/ragnarok/My project/Library/PackageCache/com.unity.collab-proxy@1.17.1/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
--r:"C:/Users/User/Desktop/ragnarok/My project/Library/PackageCache/com.unity.collab-proxy@1.17.1/Lib/Editor/PlasticSCM/unityplastic.dll"
--r:"C:/Users/User/Desktop/ragnarok/My project/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
+-r:"C:/Users/User/Desktop/portfolio/Project_A WithDB/Library/PackageCache/com.unity.collab-proxy@1.17.1/Lib/Editor/PlasticSCM/log4netPlastic.dll"
+-r:"C:/Users/User/Desktop/portfolio/Project_A WithDB/Library/PackageCache/com.unity.collab-proxy@1.17.1/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
+-r:"C:/Users/User/Desktop/portfolio/Project_A WithDB/Library/PackageCache/com.unity.collab-proxy@1.17.1/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
+-r:"C:/Users/User/Desktop/portfolio/Project_A WithDB/Library/PackageCache/com.unity.collab-proxy@1.17.1/Lib/Editor/PlasticSCM/unityplastic.dll"
+-r:"C:/Users/User/Desktop/portfolio/Project_A WithDB/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/AxisEventData.cs"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/BaseEventData.cs"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs"
