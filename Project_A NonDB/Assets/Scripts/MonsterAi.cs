@@ -25,6 +25,7 @@ public class MonsterAi : MonoBehaviour
     private MonsterStatus m_MStatus = new MonsterStatus();
 
     MonsterManager m_MonsterManager;
+    public EffectSound m_EffectSound;
 
     [SerializeField]
     Image m_imgHpBar;
@@ -101,7 +102,9 @@ public class MonsterAi : MonoBehaviour
     }
     IEnumerator AttackDelay(float fTime)
     {
+        
         m_bIsAttack = true;
+        m_EffectSound.MonsterSound("Hit");
         PlayerStatus playerStatus = m_objTarget.GetComponent<PlayerStatus>();
         ApplyStatus applyStatus = playerStatus.AplyStat;
         playerStatus.CurHp = playerStatus.CurHp - (m_MStatus.Atk - applyStatus.Def);
@@ -218,6 +221,7 @@ public class MonsterAi : MonoBehaviour
 
     void Start()
     {
+        m_EffectSound = this.gameObject.GetComponent<EffectSound>();
         m_MonsterManager = MonsterManager.instance;
         m_fDelayTime = Random.Range(1f, 5f);
         m_MonAnim = this.gameObject.GetComponent<Animator>();

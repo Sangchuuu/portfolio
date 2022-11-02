@@ -31,6 +31,8 @@ public class Movement : MonoBehaviour
 
     static GameObject m_objPlayer;
 
+    public EffectSound m_EffectSound;
+
 
     public GameObject ObjEnemy { get => m_objEnemy; set => m_objEnemy = value; }
     public bool IsAttacking { get => m_bIsAttack; set => m_bIsAttack = value; }
@@ -44,6 +46,7 @@ public class Movement : MonoBehaviour
         float fMovSpd = m_ApplyStatus.MovSpd;
             if (m_bIsMoving == true)
             {
+                m_EffectSound.PlaySound("Walk");
                 float fDist = (m_traMovePoint - this.transform.position).magnitude;
                 Vector3 vDir = (m_traMovePoint - this.transform.position).normalized;
                 if (m_objEnemy == null)
@@ -120,6 +123,7 @@ public class Movement : MonoBehaviour
     {
         m_bIsAttack = true;
         m_PAnimator.SetTrigger("Attack");
+        m_EffectSound.PlaySound("Attack");
         if (m_objEnemy != null)
         {
             MonsterAi Monster = m_objEnemy.GetComponent<MonsterAi>();
@@ -222,6 +226,7 @@ public class Movement : MonoBehaviour
         {
             m_objPlayer = this.gameObject;
         }
+        m_EffectSound = this.gameObject.GetComponent<EffectSound>();
     }
     
     void Start()

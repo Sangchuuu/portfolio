@@ -66,7 +66,7 @@ public class JoyStick : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
     private void Start()
     {
-        Debug.Log("pp");
+
     }
     // Update is called once per frame
     void Update()
@@ -78,6 +78,7 @@ public class JoyStick : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         }
         else if (m_bisInput == true)
         {
+            m_objPlayer.GetComponent<Movement>().m_EffectSound.PlaySound("Walk");
             m_objPlayer = GameManager.instance.Player;
             m_objPlayer.transform.position += m_vMove * m_fSpeed *Time.deltaTime;
             //m_objPlayer.transform.position += transform.forward * m_fSpeed * Time.deltaTime;
