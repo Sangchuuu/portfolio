@@ -344,6 +344,7 @@
 "Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Vortex.cs"
 "Assets/Scripts/ApplyStatus.cs"
 "Assets/Scripts/CameraController.cs"
+"Assets/Scripts/EffectSound.cs"
 "Assets/Scripts/Equipment.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Inventory.cs"

@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraController
+    - EffectSound
     - Equipment
     - GameManager
     - Inventory
@@ -29,10 +30,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -189,6 +188,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 91
@@ -206,9 +209,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3332}
     - Class: 114
-      Script: {instanceID: 3980}
+      Script: {instanceID: 3410}
     - Class: 114
-      Script: {instanceID: 5222}
+      Script: {instanceID: 3982}
+    - Class: 114
+      Script: {instanceID: 5224}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -264,6 +269,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
@@ -313,27 +322,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3332}
     - Class: 114
-      Script: {instanceID: 3866}
+      Script: {instanceID: 3410}
     - Class: 114
-      Script: {instanceID: 3912}
+      Script: {instanceID: 3868}
     - Class: 114
-      Script: {instanceID: 4276}
+      Script: {instanceID: 3914}
     - Class: 114
-      Script: {instanceID: 4430}
+      Script: {instanceID: 4278}
     - Class: 114
-      Script: {instanceID: 4438}
+      Script: {instanceID: 4432}
     - Class: 114
-      Script: {instanceID: 4718}
+      Script: {instanceID: 4440}
     - Class: 114
-      Script: {instanceID: 4722}
+      Script: {instanceID: 4720}
     - Class: 114
-      Script: {instanceID: 4802}
+      Script: {instanceID: 4724}
     - Class: 114
-      Script: {instanceID: 5024}
+      Script: {instanceID: 4804}
     - Class: 114
-      Script: {instanceID: 5110}
+      Script: {instanceID: 5026}
     - Class: 114
-      Script: {instanceID: 5222}
+      Script: {instanceID: 5112}
+    - Class: 114
+      Script: {instanceID: 5224}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -547,7 +558,7 @@ ScriptsOnlyBuild:
     className: PostEffectsHelper
   - hash:
       serializedVersion: 2
-      Hash: 01c477541138d7fd8e32f9c0d6d42a45
+      Hash: ad7dd7e0eedb3b5ad83b3bc57c12865a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Movement
@@ -749,6 +760,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 10f8df50f7fbea50d04269a99b503073
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EffectSound
   - hash:
       serializedVersion: 2
       Hash: b2119094b0083707a0b6ff356d4a1f66
@@ -1123,7 +1140,7 @@ ScriptsOnlyBuild:
     className: ColorCorrectionRamp
   - hash:
       serializedVersion: 2
-      Hash: 179804405f726b10ea6d0739429e76c7
+      Hash: 7152c070fb1e3bd92b4caee577102bb4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MonsterAi
