@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject m_objPlayer;
     private GameObject m_prePlayer;
+
     [SerializeField]
     private GameObject m_objPCamera;
     private GameObject m_preCamera;

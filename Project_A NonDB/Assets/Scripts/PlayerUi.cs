@@ -80,6 +80,10 @@ public class PlayerUi : MonoBehaviour
     public GameObject MonsterInfo { get => m_objMonsterInfo; set => m_objMonsterInfo = value; }
     public bool AttackButtonclick { get => m_bIsAttackButtonClick; set => m_bIsAttackButtonClick = value; }
 
+    private void OnGUI()
+    {
+        
+    }
 
     public static PlayerUi instance = null;
     private void Awake()
@@ -293,7 +297,6 @@ public class PlayerUi : MonoBehaviour
     void Update()
     {
 
-
         if (m_objPcam == null)
         {
             m_objPcam = GameManager.instance.PlayerCamera;
@@ -323,7 +326,7 @@ public class PlayerUi : MonoBehaviour
             SetStatus();
             StatPlus();
             StatMinus();
-            StatApply();
+            //StatApply();
         }
 
         SetMonsterInfo();

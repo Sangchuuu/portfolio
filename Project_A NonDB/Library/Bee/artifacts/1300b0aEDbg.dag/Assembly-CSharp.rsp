@@ -396,7 +396,6 @@
 "Assets/Scripts/Movement.cs"
 "Assets/Scripts/PlayerStatus.cs"
 "Assets/Scripts/PlayerUi.cs"
-"Assets/Scripts/Potion.cs"
 "Assets/Scripts/SceneChange.cs"
 "Assets/Scripts/Shop.cs"
 "Assets/Scripts/ShopCartSlot.cs"
